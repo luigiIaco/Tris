@@ -1,0 +1,134 @@
+
+body{
+    background-color: black;
+}
+
+#contenitore{
+    height:79vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    border:1px solid aquamarine;
+}
+
+.white{
+    color:white;
+}
+
+ 
+
+
+
+td{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+
+/* svg{
+    scale: 0;
+    transition: 0.5s;
+} */
+
+#bottone{
+    border-radius: 50px;
+    background-color: yellow;
+    position: relative;
+    left:32%;
+    font-size: 30px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+.giocatoreUno{
+    color:aqua;
+    position: relative;
+    top:220px;
+    left:-200px;
+    font-size:35px;
+    display: inline-block;
+    scale: 0;
+    animation: popUp 2s linear;
+}
+
+.giocatoreDue{
+    color: aqua;
+    position: relative;
+    top:220px;
+    left:43%;
+    font-size:30px;
+    display: inline-block;
+    scale:0;
+    animation: popUp 2s linear;
+}
+
+
+
+@keyframes popUp{
+    0%{
+        scale:0.5;
+    }
+    50%{
+        scale:1.3;
+    }
+    100%{
+        scale:0;
+    }
+}
+
+
+.animationSegno{
+    animation: segnoScale 0.5s linear;
+}
+@keyframes segnoScale {
+    0%{
+        scale:0;
+    }
+
+    100%{
+        scale: 1;
+    }
+}
+
+.vittoria_uno{
+    color: rgb(255, 158, 13,0.9);
+    position:absolute;
+    left:13%; 
+    top:240px;
+    font-size: 80px;
+    scale:0;
+    transition: 1s;
+}
+
+.vittoria_due {
+    color: rgb(255, 158, 13,0.9);
+    position:absolute;
+    left:19%; 
+    top:300px;
+    font-size: 80px;
+    scale:0;
+    transition: 1s;
+}
+
+
+#replay{
+    border-radius: 50px;
+    background-color: yellow;
+    position: relative;
+    left:43%;
+    top:400px;
+    font-size: 30px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    scale:0;
+    transition: 1s;
+}
